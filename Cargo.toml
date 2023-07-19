@@ -3,4 +3,5 @@
 resolver = "2"
 members = [
     "futures_examples",
+    "timer_future"
 ]

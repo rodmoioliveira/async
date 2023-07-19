@@ -1,9 +1,14 @@
+use std::time::Duration;
+
+use async_std::task;
 use futures::executor::block_on;
 
 async fn learn_song() -> String {
+    task::sleep(Duration::from_secs(1)).await;
     "Learning song!".to_string()
 }
 async fn sing_song(song: String) {
+    task::sleep(Duration::from_secs(1)).await;
     eprintln!("{}", song);
 }
 

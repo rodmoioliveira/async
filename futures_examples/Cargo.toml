@@ -18,4 +18,5 @@ name = "futures_3"
 path = "src/futures_3.rs"
 
 [dependencies]
+async-std = "1.12.0"
 futures = "0.3.28"
